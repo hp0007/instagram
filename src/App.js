@@ -39,7 +39,7 @@ const App = () => {
       {
         id: 1,
         name: "Home",
-        path: "/",
+        path: "/instagram",
         icon: <AiOutlineHome />,
       },
       {
@@ -292,7 +292,7 @@ const App = () => {
       <Sidebar value={data.navData} />
       <Switch>
         <Route
-          path="/"
+          path="/instagram"
           component={() => (
             <Home dataStorie={data.StorieData} dataPost={data.postData} />
           )}
