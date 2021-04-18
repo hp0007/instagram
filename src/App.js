@@ -298,11 +298,11 @@ const App = () => {
           )}
           exact
         />
-        <Route path="/Search" component={Search} />
-        <Route path="/Reels" component={Reels} />
-        <Route path="/IGTV" component={IGTV} />
-        <Route path="/Activity" component={Activity} />
-        <Route path="/Settings" component={Setting} />
+        <Route exact path="/Search" component={Search} />
+        <Route exact path="/Reels" component={Reels} />
+        <Route exact path="/IGTV" component={IGTV} />
+        <Route exact path="/Activity" component={Activity} />
+        <Route exact path="/Settings" component={Setting} />
       </Switch>
       <Messagebar value={data.messageData} />
     </div>
