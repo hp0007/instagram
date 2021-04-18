@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-
+import { AiFillHeart } from "react-icons/ai";
 const Post = (props) => {
   let [count, setCount] = useState(props.likes);
   let [stop, setStop] = useState(true);
+  let [icon, setIcon] = useState(props.heart);
   const countforlike = 0;
 
   let like = () => {
     if (stop) {
       setCount(count + 1);
-      document.getElementById(props.id).style.display = "block  ";
+      setIcon(<AiFillHeart />);
       document.getElementById(props.id).style.color = "rgb(235,7,96)";
     }
     setStop(false);
@@ -31,7 +32,7 @@ const Post = (props) => {
       </div>
       <div className="icons">
         <i id={props.id} onClick={like}>
-          {props.heart}
+          {icon}
         </i>
         <span>{count}</span>
         <i>{props.comment}</i>

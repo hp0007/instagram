@@ -136,7 +136,7 @@ const App = () => {
         img: profile2,
         likes: 1743,
         comments: 49,
-        heartIcon: <AiFillHeart />,
+        heartIcon: <AiOutlineHeart />,
         commentIcon: <BiMessageRounded />,
         shareIcon: <RiShareCircleFill />,
         saveIcon: <HiOutlineSave />,
