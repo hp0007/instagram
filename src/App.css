@@ -219,6 +219,27 @@ i {
   object-fit: cover;
   border-radius: 1rem;
 }
+.centerheart {
+  font-size: 0rem;
+  position: relative;
+  top: -80%;
+  left: 35%;
+  z-index: 100;
+  color: var(--white);
+  animation: ZoomEffect 2s ease;
+  display: none;
+}
+@keyframes ZoomEffect {
+  0% {
+    font-size: 0;
+  }
+  50% {
+    font-size: 10rem;
+  }
+  100% {
+    font-size: 0;
+  }
+}
 .posts .icons {
   height: 10%;
   width: 100%;

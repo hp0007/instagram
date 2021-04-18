@@ -3,10 +3,12 @@ import React, { useState } from "react";
 const Post = (props) => {
   let [count, setCount] = useState(props.likes);
   let [stop, setStop] = useState(true);
+  const countforlike = 0;
 
   let like = () => {
     if (stop) {
       setCount(count + 1);
+      document.getElementById(props.id).style.display = "block  ";
       document.getElementById(props.id).style.color = "rgb(235,7,96)";
     }
     setStop(false);
@@ -23,9 +25,14 @@ const Post = (props) => {
       </div>
       <div className="mainphoto">
         <img src={props.src} key={props.id} onDoubleClick={like} />
+        {/* <i className="centerheart" id={props.id}>
+          {props.heart}
+        </i> */}
       </div>
       <div className="icons">
-        <i id={props.id}>{props.heart}</i>
+        <i id={props.id} onClick={like}>
+          {props.heart}
+        </i>
         <span>{count}</span>
         <i>{props.comment}</i>
         <span>{props.comments}</span>
