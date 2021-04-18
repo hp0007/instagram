@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Img1 from "../assets/images/Search/1.jpg";
-import { AiFillHeart } from "react-icons/ai";
+import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { BiMessageRounded } from "react-icons/bi";
 import { RiShareCircleFill } from "react-icons/ri";
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -9,10 +9,12 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 const Slide = (props) => {
   let [count, setCount] = useState(props.like);
   let [stop, setStop] = useState(true);
+  let [icon, setIcon] = useState(<AiOutlineHeart />);
 
   let like = () => {
     if (stop) {
       setCount(count + 1);
+      setIcon(<AiFillHeart />);
       document.getElementById(props.id).style.color = "rgb(235,7,96)";
     }
     setStop(false);
@@ -33,7 +35,7 @@ const Slide = (props) => {
         <p>{props.desc}</p>
         <div className="icons d-flex flex-column">
           <i className="icon">
-            <AiFillHeart id={props.id} />
+            <i id={props.id}>{icon}</i>
             <h6>{count}</h6>
           </i>
           <i>

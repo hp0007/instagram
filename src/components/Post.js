@@ -4,7 +4,6 @@ const Post = (props) => {
   let [count, setCount] = useState(props.likes);
   let [stop, setStop] = useState(true);
   let [icon, setIcon] = useState(props.heart);
-  const countforlike = 0;
 
   let like = () => {
     if (stop) {
