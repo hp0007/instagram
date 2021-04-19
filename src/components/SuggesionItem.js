@@ -4,8 +4,8 @@ const SuggesionItem = (props) => {
   return (
     <div className="suggesion-item d-flex">
       <img src={props.img} height="50" width="50" />
-      <div className="content ml-2">
-        <p className="one pb-1 mt-3">{props.name}</p>
+      <div className="content ml-2 mt-1">
+        <p className="one pb-1">{props.name}</p>
         <p className="sec">{props.nickname}</p>
       </div>
       <div className="btn ml-auto">Follow</div>

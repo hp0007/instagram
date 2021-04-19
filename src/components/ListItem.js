@@ -5,7 +5,7 @@ const ListItem = (props) => {
   return (
     <div className="item d-flex">
       <img src={props.img} height="60" width="60" />
-      <div className="content">
+      <div className="content mt-2">
         <p className="title">{props.name}</p>
         <p className="share">Shared Post By Fashion_0007 </p>
       </div>
