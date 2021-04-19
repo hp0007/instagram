@@ -188,16 +188,19 @@
   .activity .following-item {
     padding: 2%;
   }
-  .activity .following-item img {
+  .activity .suggesion-item {
+    padding: 2%;
+  }
+  .activity img {
     height: 3rem;
     width: 3rem;
   }
-  .activity .following-item .one {
+  .activity .one {
     line-height: 0;
-    margin-top: 10%;
+    margin-top: 14% !important;
     font-size: 0.8rem;
   }
-  .activity .following-item .sec {
+  .activity .sec {
     color: rgba(255, 255, 255, 0.3);
     font-size: 0.8rem;
   }
@@ -205,6 +208,7 @@
     font-size: 0.9rem;
     padding: 1.5% 3% !important;
   }
+
   .settings {
     width: 100%;
     padding-top: 7%;

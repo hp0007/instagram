@@ -54,14 +54,14 @@ const Activity = () => {
           content="who you might know,is on instagram"
         />
         <h6>Suggestions for you</h6>
-        <SuggestionItem img={profile1} name="David Brooks" nickname="......." />
+        <SuggestionItem img={profile1} name="David Brooks" nickname="David  " />
         <SuggestionItem
           img={profile2}
           name="Matthew Hinkle"
-          nickname="......."
+          nickname="Mathhew"
         />
-        <SuggestionItem img={profile3} name="Ed Morris" nickname="......." />
-        <SuggestionItem img={profile4} name="Paul Pinnock" nickname="......." />
+        <SuggestionItem img={profile3} name="Ed Morris" nickname="Ed" />
+        <SuggestionItem img={profile4} name="Paul Pinnock" nickname="Paul" />
       </div>
     </div>
   );
