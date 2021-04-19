@@ -343,8 +343,8 @@ i {
 .messagebar h6 {
   font-size: 1.3rem;
   margin: 10% 5% 4% 5%;
-  font-weight: 600;
   color: var(--white);
+  letter-spacing: 1px;
 }
 .messagebar .input-group {
   padding: 4% 4%;
@@ -386,10 +386,7 @@ i {
 .messagebar .item img {
   object-fit: cover;
 }
-.messagebar .list .title {
-  font-weight: 600;
-  font-size: 0.5rem;
-}
+
 .messagebar .item:hover {
   background-color: var(--content_div);
 }
@@ -403,8 +400,9 @@ i {
   color: var(--white);
 }
 .messagebar .item .title {
-  font-size: 0.9rem;
-  /* line-height: 0; */
+  font-size: 1rem;
+  line-height: 0.5rem;
+  margin-top: 5 %;
 }
 .messagebar .item .share {
   line-height: 0;
