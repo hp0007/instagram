@@ -5,7 +5,9 @@ import { BsArrowLeft } from "react-icons/bs";
 
 const Sidebar = (props) => {
   const closeSidebar = () => {
-    document.getElementById(props.mainId).style.marginLeft = "-100%";
+    if (window.screen.width < 1100) {
+      document.getElementById(props.mainId).style.marginLeft = "-100%";
+    }
   };
   return (
     <div className="sidebar" id="sidebar">
