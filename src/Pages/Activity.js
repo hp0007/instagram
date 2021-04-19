@@ -15,7 +15,7 @@ const Activity = () => {
         <h6>Activity</h6>
         <div className="follow-request d-flex">
           <div className="profiles text-dark">2</div>
-          <div className="content">
+          <div className="content ml-2">
             <h6>Follow Request</h6>
             <p>Approve or ignore request</p>
           </div>
