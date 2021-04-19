@@ -1,15 +1,16 @@
 import React from "react";
 
-const FollowingItem = (props) => {
+const SuggesionItem = (props) => {
   return (
-    <div className="following-item d-flex">
+    <div className="suggesion-item d-flex">
       <img src={props.img} height="50" width="50" />
       <div className="content ml-2">
         <p className="one mb-4">{props.name}</p>
-        <p className="sec">{props.content}</p>
+        <p className="sec">{props.nickname}</p>
       </div>
+      <div className="btn ml-auto">Follow</div>
     </div>
   );
 };
 
-export default FollowingItem;
+export default SuggesionItem;
