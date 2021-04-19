@@ -737,7 +737,10 @@ video::-webkit-media-controls-volume-slider {
 }
 .activity .following-item p {
   line-height: 0;
-  margin-top: 2%;
+  margin-top: 10%;
+}
+.activity .following-item .sec {
+  color: rgba(255, 255, 255, 0.3);
 }
 /* Settings */
 .settings {
