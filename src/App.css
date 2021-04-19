@@ -25,6 +25,7 @@
   height: 100vh;
   display: flex;
   background-color: var(--content_div);
+  transition: 0.7s;
 }
 /* sidebar */
 .sidebar {
@@ -38,6 +39,16 @@
 }
 .sidebar .container {
   padding: 10% 0;
+  position: relative;
+}
+.sidebar .container .arrowLeft {
+  position: absolute;
+  color: var(--white);
+  font-size: 2rem;
+  right: 4%;
+  top: 0;
+  z-index: 11;
+  display: none;
 }
 .sidebar .container .profile-details {
   width: 88%;
@@ -119,12 +130,41 @@
   background-color: var(--content_div);
   margin: 0 auto;
   overflow-y: scroll;
-  padding: 1% 0 0 0;
 }
 .posts::-webkit-scrollbar {
   /* width: 5px;
   background-color: #f5f5f5; */
   display: none;
+}
+@font-face {
+  src: url(./assets/fonts/FontsFree-Net-Billabong.ttf);
+  font-family: "FontsFree-Net-Billabong";
+}
+.topbar-for-mobile {
+  height: 10%;
+  width: 52%;
+  position: absolute;
+  top: 0;
+  left: 47%;
+  transform: translate(-50%, 0);
+  background-color: var(--background_color);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  padding: 0% 3%;
+  z-index: 11;
+  display: none;
+}
+.topbar-for-mobile h6 {
+  font-size: 2.5rem;
+  margin-top: 2%;
+  letter-spacing: 1px;
+  font-family: FontsFree-Net-Billabong;
+}
+.topbar-for-mobile i {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
 }
 .posts .stories {
   width: 100%;
@@ -278,6 +318,15 @@ i {
 .messagebar .top {
   height: 15%;
   width: 100%;
+  position: relative;
+}
+.messagebar .top .arrowLeft {
+  position: absolute;
+  left: 1%;
+  top: -15%;
+  font-size: 2rem;
+  color: var(--white);
+  display: none;
 }
 .list::-webkit-scrollbar {
   /* width: 5px;

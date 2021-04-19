@@ -1,11 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import profile from "../assets/images/photo-2.jpg";
+import { BsArrowLeft } from "react-icons/bs";
 
 const Sidebar = (props) => {
+  const closeSidebar = () => {
+    document.getElementById(props.mainId).style.marginLeft = "-100%";
+  };
   return (
-    <div className="sidebar">
+    <div className="sidebar" id="sidebar">
       <div className="container">
+        <i className="arrowLeft" onClick={closeSidebar}>
+          <BsArrowLeft />
+        </i>
         <div className="profile-details">
           <img src={profile} height="90" width="90" />
           <div className="content">
@@ -36,6 +43,7 @@ const Sidebar = (props) => {
                 to={data.path}
                 activeClassName="active"
                 exact
+                onClick={closeSidebar}
               >
                 <i>{data.icon}</i>
                 {data.name}

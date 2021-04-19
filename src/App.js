@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./responsive.css";
 import { Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Search from "./Pages/Search";
@@ -32,6 +33,8 @@ import profile6 from "./assets/images/photo-6.jpg";
 import profile7 from "./assets/images/photo-7.jpg";
 import profile8 from "./assets/images/photo-8.jpg";
 import profile9 from "./assets/images/photo-9.jpg";
+import { BiMessageRoundedDots } from "react-icons/bi";
+import { BsPerson } from "react-icons/bs";
 
 const App = () => {
   var data = {
@@ -287,14 +290,33 @@ const App = () => {
       },
     ],
   };
+  const sidebarOpen = () => {
+    document.getElementById("main").style.marginLeft = "0%";
+  };
+  const messagebarOpen = () => {
+    document.getElementById("main").style.marginLeft = "-200%";
+  };
   return (
-    <div className="main">
-      <Sidebar value={data.navData} />
+    <div className="main" id="main">
+      <Sidebar value={data.navData} id="sidebar" mainId="main" />
+      <div className="topbar-for-mobile">
+        <i onClick={sidebarOpen}>
+          <BsPerson />
+        </i>
+        <h6 className="ml-auto">Instagram</h6>
+        <i className="ml-auto" onClick={messagebarOpen}>
+          <BiMessageRoundedDots />
+        </i>
+      </div>
       <Switch>
         <Route
           path="/instagram"
           component={() => (
-            <Home dataStorie={data.StorieData} dataPost={data.postData} />
+            <Home
+              dataStorie={data.StorieData}
+              dataPost={data.postData}
+              mainId="main"
+            />
           )}
           exact
         />
@@ -304,7 +326,7 @@ const App = () => {
         <Route exact path="/Activity" component={Activity} />
         <Route exact path="/Settings" component={Setting} />
       </Switch>
-      <Messagebar value={data.messageData} />
+      <Messagebar value={data.messageData} mainId="main" />
     </div>
   );
 };

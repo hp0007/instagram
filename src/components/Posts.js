@@ -18,6 +18,7 @@ import profile7 from "../assets/images/photo-7.jpg";
 import profile8 from "../assets/images/photo-8.jpg";
 import profile9 from "../assets/images/photo-9.jpg";
 import profile10 from "../assets/images/photo-10.jpg";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/swiper.scss";
@@ -25,10 +26,20 @@ import Post from "./Post";
 
 const Posts = (props) => {
   return (
-    <div className="posts">
+    <div className="posts" id="posts">
       <div className="all-posts">
         <div className="stories pt-2">
-          <Swiper spaceBetween={10} slidesPerView={7}>
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={7}
+            breakpoints={{
+              // when window width is >= 640px
+              300: {
+                width: 400,
+                slidesPerView: 4,
+              },
+            }}
+          >
             {props.value.map((data) => {
               return (
                 <SwiperSlide className="slide" key={data.id}>

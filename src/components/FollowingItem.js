@@ -5,7 +5,7 @@ const FollowingItem = () => {
   return (
     <div className="following-item d-flex">
       <img src={profile1} height="60" width="60" />
-      <p className="ml-3">harshit gajjar ,</p>
+      <p className="ml-2">harshit gajjar ,</p>
       <p>started following you.</p>
     </div>
   );
