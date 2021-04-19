@@ -141,7 +141,7 @@
   font-family: "FontsFree-Net-Billabong";
 }
 .topbar-for-mobile {
-  height: 10%;
+  height: 9%;
   width: 52%;
   position: absolute;
   top: 0;
@@ -162,7 +162,7 @@
   font-family: FontsFree-Net-Billabong;
 }
 .topbar-for-mobile i {
-  font-size: 2rem;
+  font-size: 1.7rem;
   display: flex;
   justify-content: center;
 }
@@ -436,9 +436,9 @@ i {
 .searchSection .wrraper-1 {
   width: 100%;
   display: grid;
-  grid-template-columns: 25% 25% 50%;
+  grid-template-columns: 40% 60%;
   grid-auto-rows: minmax(300px, 300px);
-  grid-column-gap: 0.4em;
+  grid-column-gap: 0.7em;
   margin-bottom: 2%;
   padding: 0% 2% 0 0;
 }
@@ -449,9 +449,9 @@ i {
 .searchSection .wrraper-2 {
   width: 100%;
   display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-columns: 60% 40%;
   grid-auto-rows: minmax(300px, 300px);
-  grid-column-gap: 0.4em;
+  grid-column-gap: 0.7em;
   margin-bottom: 2%;
   padding: 0 2% 0 0;
 }

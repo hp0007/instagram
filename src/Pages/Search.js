@@ -24,9 +24,9 @@ const Search = () => {
         <div className="image">
           <img src={Img1} />
         </div>
-        <div className="image">
+        {/* <div className="image">
           <img src={Img2} />
-        </div>
+        </div> */}
         <div className="video">
           <video autoPlay muted loop>
             <source src={Video1}></source>
@@ -40,9 +40,9 @@ const Search = () => {
         <div className="image">
           <img src={Img4} />
         </div>
-        <div className="image">
+        {/* <div className="image">
           <img src={Img5} />
-        </div>
+        </div> */}
       </div>
       <div className="wrraper-2">
         <div className="image">
@@ -51,17 +51,17 @@ const Search = () => {
         <div className="image">
           <img src={Img2} />
         </div>
-        <div className="image">
+        {/* <div className="image">
           <img src={Img3} />
-        </div>
+        </div> */}
       </div>
       <div className="wrraper-1">
         <div className="image">
           <img src={Img1} />
         </div>
-        <div className="image">
+        {/* <div className="image">
           <img src={Img2} />
-        </div>
+        </div> */}
         <div className="video">
           <video autoPlay muted loop>
             <source src={Video2}></source>

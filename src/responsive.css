@@ -40,6 +40,19 @@
   .posts .all-posts .particular-post {
     width: 95%;
   }
+  .posts .all-posts .particular-post .heading h6 {
+    font-size: 1rem;
+  }
+  .posts .all-posts .particular-post .heading p {
+    font-size: 0.8rem;
+  }
+  .particular-post .icons i {
+    font-size: 1.3rem;
+  }
+  .particular-post .icons span {
+    font-size: 1rem;
+    margin-top: 1%;
+  }
   .messagebar {
     /* position: absolute;
     top: 0;
@@ -72,7 +85,28 @@
   .searchSection {
     width: 100%;
     z-index: 1;
-    padding: 7% 0 0 0;
+    padding: 7% 0% 0 0%;
+  }
+  .searchSection .wrraper-1 {
+    grid-column-gap: 0.4em;
+    grid-template-columns: 40% 60%;
+    display: grid;
+    justify-content: center;
+    padding: 0 3%;
+  }
+  .searchSection .wrraper-2 {
+    grid-column-gap: 0.4rem;
+    grid-template-columns: 40% 60%;
+    display: grid;
+    justify-content: center;
+    padding: 0 3%;
+  }
+  .searchSection .input-group {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto 4% auto;
+  }
+  .searchSection .input-group .form-control {
   }
   .reels {
     width: 100%;
@@ -83,6 +117,18 @@
   .reels .overlay .profile-detail {
     margin-top: 10%;
   }
+  .reels .overlay .profile-detail img {
+    width: 35px;
+    height: 35px;
+    margin: auto 0;
+  }
+  .reels .overlay .profile-detail h6,
+  a {
+    font-size: 0.9rem;
+  }
+  .reels p {
+    font-size: 0.8rem;
+  }
   .igtv {
     width: 100%;
   }
@@ -91,6 +137,18 @@
   }
   .igtv .overlay .profile-detail {
     margin-top: 10%;
+  }
+  .igtv .overlay .profile-detail img {
+    width: 35px;
+    height: 35px;
+    margin: auto 0;
+  }
+  .igtv .overlay .profile-detail h6,
+  a {
+    font-size: 0.9rem;
+  }
+  .igtv p {
+    font-size: 0.8rem;
   }
   .activity {
     width: 100%;
