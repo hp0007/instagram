@@ -35,7 +35,9 @@ const Slide = (props) => {
         <p>{props.desc}</p>
         <div className="icons d-flex flex-column">
           <i className="icon">
-            <i id={props.id}>{icon}</i>
+            <i id={props.id} onClick={like}>
+              {icon}
+            </i>
             <h6>{count}</h6>
           </i>
           <i>
