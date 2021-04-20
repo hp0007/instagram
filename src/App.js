@@ -79,7 +79,7 @@ const App = () => {
     StorieData: [
       {
         id: 1,
-        name: "Your Storie",
+        name: "Your Story",
         img: profile2,
         classname: "own",
       },

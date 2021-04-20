@@ -29,7 +29,7 @@ const Slide = (props) => {
           <img src={props.img} height="50" width="50"></img>
           <h6 className="mr-2">{props.name} -</h6>
           <a href="#" className="">
-            Folow
+            Follow
           </a>
         </div>
         <p>{props.desc}</p>
