@@ -71,7 +71,7 @@ const App = () => {
       },
       {
         id: 5,
-        name: "Setting",
+        name: "Settings",
         path: "/Settings",
         icon: <AiOutlineSetting />,
       },
