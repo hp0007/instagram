@@ -24,9 +24,7 @@ const Sidebar = (props) => {
           <div className="follows d-flex">
             <div className="total-post">
               <p>50</p>
-              <p>
-                <posts></posts>
-              </p>
+              <p>posts</p>
             </div>
             <div className="followers">
               <p>1k</p>
