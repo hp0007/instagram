@@ -24,13 +24,16 @@
     margin-top: 0% !important;
     margin-bottom: 2.5%;
   }
+  .sidebar .follows {
+    margin-top: 4%;
+  }
   .posts {
     width: 100%;
     z-index: 1;
     padding-top: 7%;
   }
   .topbar-for-mobile {
-    width: 99.4%;
+    width: 100%;
     left: 0;
     top: 0;
     transform: translate(0);
@@ -64,12 +67,22 @@
     width: 100%;
     z-index: 111;
   }
+  .messagebar .top {
+    height: 17%;
+    margin-bottom: 5%;
+  }
+
+  .messagebar .input-group {
+    padding: 2% 4%;
+  }
   .messagebar .top h6 {
-    margin-left: 12%;
+    margin-left: 14%;
+    margin-top: 7%;
   }
   .messagebar .top .arrowLeft {
     display: block;
     left: 3%;
+    top: 10%;
   }
   .messagebar .list .item {
     padding: 0 3%;
@@ -212,19 +225,24 @@
   .settings {
     width: 100%;
     padding-top: 7%;
+    overflow-y: scroll;
   }
   .settings .content-1 h6 {
     line-height: 2.35rem;
   }
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 360px) {
   .sidebar .container {
     padding: 10% 0 0 0;
   }
+  .sidebar .nav {
+    margin-top: 3% !important;
+  }
   .sidebar .nav-link {
-    line-height: 2rem !important;
+    line-height: 0rem !important;
     margin-top: 0% !important;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
+    align-items: center;
   }
   .settings .content-1 h6 {
     line-height: 1.8rem;

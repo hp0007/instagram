@@ -10,10 +10,13 @@ const Messagebar = (props) => {
   return (
     <div className="messagebar">
       <div className="top">
-        <i className="arrowLeft" onClick={closeMessagebar}>
-          <BsArrowLeft />
-        </i>
-        <h6 className="">Messages</h6>
+        <div className="title d-flex">
+          <i className="arrowLeft" onClick={closeMessagebar}>
+            <BsArrowLeft />
+          </i>
+          <h6 className="">Messages</h6>
+        </div>
+
         <div class="input-group">
           <AiOutlineSearch className="search" />
           <input
