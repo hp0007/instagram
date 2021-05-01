@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BsPersonPlus, BsLock } from "react-icons/bs";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { AiOutlineSecurityScan, AiOutlineQuestionCircle } from "react-icons/ai";
@@ -12,7 +12,39 @@ import { BiHelpCircle } from "react-icons/bi";
 import { AiOutlineBgColors } from "react-icons/ai";
 import { FiLogOut } from "react-icons/fi";
 
-const Settings = () => {
+const Settings = (props) => {
+  useEffect(() => {
+    var input = document.getElementById("theme");
+    if (localStorage.getItem("dark") === "true") {
+      input.checked = true;
+    } else {
+      input.checked = false;
+    }
+  });
+
+  var dark;
+  const modeControl = () => {
+    var input = document.getElementById("theme");
+    if (localStorage.getItem("dark") === "false") {
+      input.checked = localStorage.getItem("dark") === "false";
+      localStorage.setItem("dark", "true");
+      document.documentElement.style.setProperty(
+        "--background_color",
+        "rgb(28,28,28)"
+      );
+      document.documentElement.style.setProperty(
+        "--content_div",
+        "rgb(48,48,48)"
+      );
+      document.documentElement.style.setProperty("--text_color", "#fff");
+    } else {
+      input.checked = localStorage.getItem("dark") !== "true";
+      localStorage.setItem("dark", "false");
+      document.documentElement.style.setProperty("--background_color", "#fff");
+      document.documentElement.style.setProperty("--content_div", "#f7f7f7");
+      document.documentElement.style.setProperty("--text_color", "#000");
+    }
+  };
   return (
     <div className="settings">
       <div className="container-fluid">
@@ -71,6 +103,10 @@ const Settings = () => {
               <AiOutlineBgColors />
             </i>
             Theme
+            <label class="switch">
+              <input type="checkbox" id="theme" onChange={modeControl} />
+              <span class="slider round"></span>
+            </label>
           </h6>
         </div>
         <h5>Logins</h5>

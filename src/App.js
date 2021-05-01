@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "./responsive.css";
 import { Switch, Route } from "react-router-dom";
@@ -37,6 +37,7 @@ import { BiMessageRoundedDots } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
 
 const App = () => {
+  localStorage.setItem("dark", false);
   var data = {
     navData: [
       {
@@ -324,7 +325,7 @@ const App = () => {
         <Route exact path="/Reels" component={Reels} />
         <Route exact path="/IGTV" component={IGTV} />
         <Route exact path="/Activity" component={Activity} />
-        <Route exact path="/Settings" component={Setting} />
+        <Route exact path="/Settings" component={() => <Setting />} />
       </Switch>
       <Messagebar value={data.messageData} mainId="main" />
     </div>
