@@ -363,7 +363,7 @@ i {
 .messagebar .item {
   height: 4.5rem;
   align-items: center;
-  padding: 0 0% 0 5%;
+  padding: 0 5% 0 5%;
   margin: 0% 4% 2% 4%;
   cursor: pointer;
   transition: 0.5s;
@@ -384,13 +384,13 @@ i {
 .messagebar .item .content {
   display: flex;
   flex-direction: column;
-  padding: 0 4%;
+  padding: 0 0 0 4%;
   color: var(--text_color);
 }
 .messagebar .item .title {
   font-size: 0.85rem;
   line-height: 0.5rem;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 .messagebar .item .share {
   line-height: 0;
@@ -398,7 +398,7 @@ i {
 }
 .messagebar .item i {
   font-size: 1.3rem;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
 }
 /* Search */
 .searchSection {

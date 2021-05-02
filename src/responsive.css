@@ -85,7 +85,7 @@
     top: 10%;
   }
   .messagebar .list .item {
-    padding: 0 3%;
+    padding: 0 3% 0 3%;
   }
   .messagebar .list .item .content {
     height: 100%;
@@ -93,8 +93,7 @@
     justify-content: center;
   }
   .messagebar .list .item .title {
-    line-height: 1.5rem;
-    margin-top: 0.1 rem;
+    line-height: 1rem;
   }
   .messagebar .list .item p {
     line-height: 0rem;
