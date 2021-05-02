@@ -399,6 +399,7 @@ i {
 .messagebar .item i {
   font-size: 1.3rem;
   margin: 0 0 0 auto;
+  color: var(--text_color);
 }
 /* Search */
 .searchSection {
