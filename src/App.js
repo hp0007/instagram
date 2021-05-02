@@ -18,6 +18,7 @@ import {
   AiOutlineSetting,
   AiFillHeart,
 } from "react-icons/ai";
+import { FiCamera } from "react-icons/fi";
 import { BiMessageRounded } from "react-icons/bi";
 import { RiShareCircleFill } from "react-icons/ri";
 import { HiOutlineSave } from "react-icons/hi";
@@ -248,46 +249,55 @@ const App = () => {
         id: 1,
         name: "David brooks",
         img: profile1,
+        icon: <FiCamera />,
       },
       {
         id: 2,
         name: "Jane Doe",
         img: profile2,
+        icon: <FiCamera />,
       },
       {
         id: 3,
         name: "Matthew Hinkle",
         img: profile3,
+        icon: <FiCamera />,
       },
       {
         id: 4,
         name: "Amy Smith",
         img: profile4,
+        icon: <FiCamera />,
       },
       {
         id: 5,
         name: "Ed Morris",
         img: profile5,
+        icon: <FiCamera />,
       },
       {
         id: 6,
         name: "Carolyn Duncan",
         img: profile6,
+        icon: <FiCamera />,
       },
       {
         id: 7,
         name: "Paul Pinnock",
         img: profile7,
+        icon: <FiCamera />,
       },
       {
         id: 8,
         name: "Elizabeth Wong",
         img: profile8,
+        icon: <FiCamera />,
       },
       {
         id: 9,
         name: "James Lathrop",
         img: profile9,
+        icon: <FiCamera />,
       },
     ],
   };

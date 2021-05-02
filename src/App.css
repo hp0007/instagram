@@ -363,13 +363,13 @@ i {
 .messagebar .item {
   height: 4.5rem;
   align-items: center;
-  padding: 0 5%;
+  padding: 0 0% 0 5%;
   margin: 0% 4% 2% 4%;
   cursor: pointer;
   transition: 0.5s;
   border-radius: 0.7rem;
   /* box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1); */
-  background-color: var(--content_div);
+  /* background-color: var(--content_div); */
 }
 .messagebar .item img {
   object-fit: cover;
@@ -388,15 +388,18 @@ i {
   color: var(--text_color);
 }
 .messagebar .item .title {
-  font-size: 1rem;
+  font-size: 0.85rem;
   line-height: 0.5rem;
   margin-top: 5%;
 }
 .messagebar .item .share {
   line-height: 0;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
-
+.messagebar .item i {
+  font-size: 1.3rem;
+  margin: 0 auto;
+}
 /* Search */
 .searchSection {
   width: 52%;
