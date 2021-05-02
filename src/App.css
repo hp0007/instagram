@@ -3,6 +3,7 @@
   --content_div: #fff;
   --primary_color: linear-gradient(to right, #a06ef2, #f94c85);
   --text_color: #000;
+  --light_gray: gray;
 }
 * {
   padding: 0;
@@ -36,7 +37,6 @@ body {
   z-index: 11;
   margin: auto 0;
   background-color: var(--background_color);
-  /* border-radius: 2rem; */
 }
 .sidebar .container {
   padding: 10% 0;
@@ -55,7 +55,7 @@ body {
   width: 88%;
   padding: 10% 2% 4% 1%;
   margin: 10% auto 0 auto;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   background-color: var(--content_div);
 }
 .sidebar .container .profile-details img {
@@ -91,8 +91,6 @@ body {
 .sidebar .follows .followers {
   width: 40%;
   text-align: center;
-  /* border-left: 1.5px solid var(--black);
-  border-right: 1.5px solid var(--black); */
 }
 .sidebar .follows .following {
   width: 30%;
@@ -133,8 +131,6 @@ body {
   overflow-y: scroll;
 }
 .posts::-webkit-scrollbar {
-  /* width: 5px;
-  background-color: #f5f5f5; */
   display: none;
 }
 @font-face {
@@ -174,15 +170,10 @@ body {
   display: flex;
   align-items: center;
   padding-left: 0.5%;
-  margin-bottom: 2%;
+  margin: 1% 0;
   z-index: 11;
 }
-/* .posts .stories .slide .grad {
-  width: 95%;
-  height: 4.5rem;
-  display: grid;
-  place-items: center;
-} */
+
 .posts .stories .slide h6 {
   font-size: 0.8rem;
   white-space: nowrap;
@@ -222,7 +213,7 @@ body {
   width: 90%;
   padding: 3%;
   background-color: var(--background_color);
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   margin: 0 auto 2% auto;
 }
 i {
@@ -257,7 +248,7 @@ i {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
 }
 .centerheart {
   font-size: 0rem;
@@ -373,7 +364,7 @@ i {
   height: 4.5rem;
   align-items: center;
   padding: 0 5%;
-  margin: 0% 4% 4% 4%;
+  margin: 0% 4% 2% 4%;
   cursor: pointer;
   transition: 0.5s;
   border-radius: 0.7rem;
@@ -399,7 +390,7 @@ i {
 .messagebar .item .title {
   font-size: 1rem;
   line-height: 0.5rem;
-  margin-top: 5 %;
+  margin-top: 5%;
 }
 .messagebar .item .share {
   line-height: 0;
@@ -467,13 +458,13 @@ i {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
 }
 .searchSection .wrraper-1 .video video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
 }
 /* Reels */
 .reels {
@@ -507,7 +498,7 @@ i {
   border: none;
   outline: none !important;
   box-shadow: none;
-  border-radius: 2rem;
+  border-radius: 0.7rem;
 }
 .reels .overlay {
   width: 98.1%;
@@ -583,7 +574,7 @@ video::-webkit-media-controls-volume-slider {
   height: 100%;
   background-color: var(--content_div);
   margin: 0 auto;
-  /* overflow-y: scroll; */
+
   padding: 0.2% 0 0 0;
 }
 .igtv .container-fluid {
@@ -592,8 +583,6 @@ video::-webkit-media-controls-volume-slider {
   display: grid;
   place-items: center;
   margin: 0 auto;
-  /* padding: 2%; */
-  /* background-color: var(--background_color); */
 }
 .igtv .overlay {
   width: 98%;
@@ -654,7 +643,7 @@ video::-webkit-media-controls-volume-slider {
   border: none;
   outline: none !important;
   box-shadow: none;
-  border-radius: 2rem;
+  border-radius: 0.7rem;
 }
 /* Activity */
 .activity {
@@ -687,13 +676,13 @@ video::-webkit-media-controls-volume-slider {
   color: var(--text_color);
 }
 .activity .follow-request .content p {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--light_gray);
 }
 .activity .follow-item {
   background-color: var(--background_color);
   align-items: center;
   padding: 1.5%;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   margin: 1% 0;
 }
 .activity .follow-item img {
@@ -710,7 +699,7 @@ video::-webkit-media-controls-volume-slider {
 .activity .follow-item p {
   line-height: 0.5;
   font-size: 0.9rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--light_gray);
 }
 .activity .follow-item .btn {
   color: #fff;
@@ -725,7 +714,7 @@ video::-webkit-media-controls-volume-slider {
   padding: 1.5% 2%;
   align-items: center;
   margin: 0 0 2% 0;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
 }
 .activity .following-item img {
   border-radius: 50%;
@@ -736,14 +725,14 @@ video::-webkit-media-controls-volume-slider {
   margin-top: 10%;
 }
 .activity .following-item .sec {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--light_gray);
 }
 .activity .suggesion-item {
   background-color: var(--background_color);
   padding: 1.5% 2%;
   align-items: center;
-  margin: 0 0 2% 0;
-  border-radius: 1rem;
+  margin: 0 0 1% 0;
+  border-radius: 0.7rem;
 }
 .activity .suggesion-item img {
   border-radius: 50%;
@@ -754,7 +743,7 @@ video::-webkit-media-controls-volume-slider {
   margin-top: 10%;
 }
 .activity .suggesion-item .sec {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--light_gray);
 }
 .activity .suggesion-item .btn {
   color: #fff;
