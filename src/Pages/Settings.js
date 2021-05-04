@@ -3,11 +3,7 @@ import { BsPersonPlus, BsLock } from "react-icons/bs";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { AiOutlineSecurityScan, AiOutlineQuestionCircle } from "react-icons/ai";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
-import {
-  RiAccountCircleLine,
-  RiAccountBoxLine,
-  RiAccountPinBoxLine,
-} from "react-icons/ri";
+import { RiAccountCircleLine, RiAccountPinBoxLine } from "react-icons/ri";
 import { BiHelpCircle } from "react-icons/bi";
 import { AiOutlineBgColors } from "react-icons/ai";
 import { FiLogOut } from "react-icons/fi";

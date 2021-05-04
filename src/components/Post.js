@@ -16,7 +16,7 @@ const Post = (props) => {
   return (
     <div className="particular-post" key={props.id}>
       <div className="heading d-flex">
-        <img src={props.src} height="45" width="45"></img>
+        <img src={props.src} height="45" width="45" alt="" />
         <div className="content">
           <h6>{props.name}</h6>
           <p>Location and other</p>
@@ -24,7 +24,7 @@ const Post = (props) => {
         <i className="ml-auto">{props.more}</i>
       </div>
       <div className="mainphoto">
-        <img src={props.src} key={props.id} onDoubleClick={like} />
+        <img src={props.src} key={props.id} onDoubleClick={like} alt="" />
         {/* <i className="centerheart" id={props.id}>
           {props.heart}
         </i> */}

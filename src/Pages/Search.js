@@ -3,11 +3,10 @@ import Img1 from "../assets/images/Search/1.jpg";
 import Img2 from "../assets/images/Search/2.jpg";
 import Img3 from "../assets/images/Search/4.jpg";
 import Img4 from "../assets/images/Search/5.jpg";
-import Img5 from "../assets/images/Search/6.jpg";
 import Img6 from "../assets/images/Search/7.jpg";
 import Video1 from "../assets/videos/Janmashtami.mp4";
 import Video2 from "../assets/videos/Ganesha Chaturthi.mp4";
-import { AiOutlineSearch } from "react-icons/ai";
+
 const Search = () => {
   return (
     <div className="searchSection">
@@ -22,7 +21,7 @@ const Search = () => {
       </div>
       <div className="wrraper-1">
         <div className="image">
-          <img src={Img1} />
+          <img src={Img1} alt="" />
         </div>
         {/* <div className="image">
           <img src={Img2} />
@@ -35,10 +34,10 @@ const Search = () => {
       </div>
       <div className="wrraper-2">
         <div className="image">
-          <img src={Img3} />
+          <img src={Img3} alt="" />
         </div>
         <div className="image">
-          <img src={Img4} />
+          <img src={Img4} alt="" />
         </div>
         {/* <div className="image">
           <img src={Img5} />
@@ -46,10 +45,10 @@ const Search = () => {
       </div>
       <div className="wrraper-2">
         <div className="image">
-          <img src={Img6} />
+          <img src={Img6} alt="" />
         </div>
         <div className="image">
-          <img src={Img2} />
+          <img src={Img2} alt="" />
         </div>
         {/* <div className="image">
           <img src={Img3} />
@@ -57,7 +56,7 @@ const Search = () => {
       </div>
       <div className="wrraper-1">
         <div className="image">
-          <img src={Img1} />
+          <img src={Img1} alt="" />
         </div>
         {/* <div className="image">
           <img src={Img2} />

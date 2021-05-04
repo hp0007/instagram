@@ -6,7 +6,6 @@ import profile1 from "../assets/images/photo-1.jpg";
 import profile2 from "../assets/images/photo-3.jpg";
 import profile3 from "../assets/images/photo-5.jpg";
 import profile4 from "../assets/images/photo-7.jpg";
-import profile5 from "../assets/images/photo-9.jpg";
 
 const Activity = () => {
   return (

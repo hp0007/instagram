@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import Img1 from "../assets/images/Search/1.jpg";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { BiMessageRounded } from "react-icons/bi";
 import { RiShareCircleFill } from "react-icons/ri";
@@ -26,7 +25,7 @@ const Slide = (props) => {
       </video>
       <div className="overlay" keys={props.id}>
         <div className="profile-detail">
-          <img src={props.img} height="50" width="50"></img>
+          <img src={props.img} height="50" width="50" alt="" />
           <h6 className="mr-2">{props.name} -</h6>
           <a href="#" className="">
             Follow

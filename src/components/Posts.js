@@ -1,23 +1,4 @@
 import React from "react";
-import storie1 from "../assets/images/photo-1.jpg";
-import storie2 from "../assets/images/photo-2.jpg";
-import storie3 from "../assets/images/photo-3.jpg";
-import storie4 from "../assets/images/photo-4.jpg";
-import storie5 from "../assets/images/photo-5.jpg";
-import storie6 from "../assets/images/photo-6.jpg";
-import storie7 from "../assets/images/photo-7.jpg";
-import storie8 from "../assets/images/photo-8.jpg";
-import storie9 from "../assets/images/photo-9.jpg";
-import profile1 from "../assets/images/photo-1.jpg";
-import profile2 from "../assets/images/photo-2.jpg";
-import profile3 from "../assets/images/photo-3.jpg";
-import profile4 from "../assets/images/photo-4.jpg";
-import profile5 from "../assets/images/photo-5.jpg";
-import profile6 from "../assets/images/photo-6.jpg";
-import profile7 from "../assets/images/photo-7.jpg";
-import profile8 from "../assets/images/photo-8.jpg";
-import profile9 from "../assets/images/photo-9.jpg";
-import profile10 from "../assets/images/photo-10.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -43,7 +24,7 @@ const Posts = (props) => {
             {props.value.map((data) => {
               return (
                 <SwiperSlide className="slide" key={data.id}>
-                  <img src={data.img} className={data.classname} />
+                  <img src={data.img} className={data.classname} alt="" />
                   <h6>{data.name}</h6>
                 </SwiperSlide>
               );
