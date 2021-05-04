@@ -16,7 +16,7 @@ const Post = (props) => {
   return (
     <div className="particular-post" key={props.id}>
       <div className="heading d-flex">
-        <img src={props.src} height="60" width="60"></img>
+        <img src={props.src} height="45" width="45"></img>
         <div className="content">
           <h6>{props.name}</h6>
           <p>Location and other</p>

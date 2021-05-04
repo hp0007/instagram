@@ -188,7 +188,7 @@ body {
   height: 4.2rem;
   object-fit: cover;
   border-radius: 45%;
-  padding: 4%;
+  padding: 3%;
   display: block;
   margin: 0 auto;
 }
@@ -196,9 +196,9 @@ body {
   width: 4.2rem;
   height: 4.2rem;
   object-fit: cover;
-  border-radius: 45%;
+  border-radius: 50%;
   border: 2.5px solid #f94c85;
-  padding: 4%;
+  padding: 3%;
   display: block;
   margin: 0 auto;
 }
@@ -220,7 +220,6 @@ i {
   cursor: pointer;
 }
 .posts .all-posts .particular-post .heading {
-  height: 10%;
   width: 100%;
   align-items: center;
   color: var(--text_color);
@@ -231,18 +230,19 @@ i {
 }
 .posts .all-posts .particular-post .heading .content {
   padding-left: 2%;
+  margin-top: 1.5%;
 }
 .posts .all-posts .particular-post .heading h6 {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 .posts .all-posts .particular-post .heading p {
   line-height: 0;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 .posts .mainphoto {
   width: 100%;
   height: 24rem;
-  margin: 3% 0 2% 0;
+  margin: 2% 0 2% 0;
 }
 .posts .mainphoto img {
   width: 100%;
