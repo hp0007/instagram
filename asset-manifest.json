@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/instagram/static/css/main.e942471c.chunk.css",
-    "main.js": "/instagram/static/js/main.cae6ff13.chunk.js",
-    "main.js.map": "/instagram/static/js/main.cae6ff13.chunk.js.map",
+    "main.js": "/instagram/static/js/main.0257bef3.chunk.js",
+    "main.js.map": "/instagram/static/js/main.0257bef3.chunk.js.map",
     "runtime-main.js": "/instagram/static/js/runtime-main.a728cee1.js",
     "runtime-main.js.map": "/instagram/static/js/runtime-main.a728cee1.js.map",
     "static/css/2.38029145.chunk.css": "/instagram/static/css/2.38029145.chunk.css",
@@ -16,13 +16,11 @@
     "static/media/2.741e250e.jpg": "/instagram/static/media/2.741e250e.jpg",
     "static/media/4.89dad70a.jpg": "/instagram/static/media/4.89dad70a.jpg",
     "static/media/5.c2aff6b6.jpg": "/instagram/static/media/5.c2aff6b6.jpg",
-    "static/media/6.34af9835.jpg": "/instagram/static/media/6.34af9835.jpg",
     "static/media/7.8cfde26b.jpg": "/instagram/static/media/7.8cfde26b.jpg",
     "static/media/App.css": "/instagram/static/media/Poppins-Medium.9e1bb626.ttf",
     "static/media/Ganesha Chaturthi.c9bfdbad.mp4": "/instagram/static/media/Ganesha Chaturthi.c9bfdbad.mp4",
     "static/media/Janmashtami.6843c7c8.mp4": "/instagram/static/media/Janmashtami.6843c7c8.mp4",
     "static/media/photo-1.174672af.jpg": "/instagram/static/media/photo-1.174672af.jpg",
-    "static/media/photo-10.3398d5af.jpg": "/instagram/static/media/photo-10.3398d5af.jpg",
     "static/media/photo-2.0d1c9b74.jpg": "/instagram/static/media/photo-2.0d1c9b74.jpg",
     "static/media/photo-3.3a2529e4.jpg": "/instagram/static/media/photo-3.3a2529e4.jpg",
     "static/media/photo-4.fa12dd85.jpg": "/instagram/static/media/photo-4.fa12dd85.jpg",
@@ -37,6 +35,6 @@
     "static/css/2.38029145.chunk.css",
     "static/js/2.c9c5a803.chunk.js",
     "static/css/main.e942471c.chunk.css",
-    "static/js/main.cae6ff13.chunk.js"
+    "static/js/main.0257bef3.chunk.js"
   ]
 }
