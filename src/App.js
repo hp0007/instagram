@@ -16,7 +16,6 @@ import {
   AiOutlineHeart,
   AiOutlineSearch,
   AiOutlineSetting,
-  AiFillHeart,
 } from "react-icons/ai";
 import { FiCamera } from "react-icons/fi";
 import { BiMessageRounded } from "react-icons/bi";
@@ -34,8 +33,8 @@ import profile6 from "./assets/images/photo-6.jpg";
 import profile7 from "./assets/images/photo-7.jpg";
 import profile8 from "./assets/images/photo-8.jpg";
 import profile9 from "./assets/images/photo-9.jpg";
-import { BiMessageRoundedDots } from "react-icons/bi";
-import { BsPerson } from "react-icons/bs";
+import { RiMessengerLine } from "react-icons/ri";
+import { CgProfile } from "react-icons/cg";
 
 const App = () => {
   localStorage.setItem("dark", false);
@@ -312,11 +311,11 @@ const App = () => {
       <Sidebar value={data.navData} id="sidebar" mainId="main" />
       <div className="topbar-for-mobile">
         <i onClick={sidebarOpen}>
-          <BsPerson />
+          <CgProfile />
         </i>
         <h6 className="ml-auto">Instagram</h6>
         <i className="ml-auto" onClick={messagebarOpen}>
-          <BiMessageRoundedDots />
+          <RiMessengerLine />
         </i>
       </div>
       <Switch>
