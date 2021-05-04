@@ -30,7 +30,7 @@
   .posts {
     width: 100%;
     z-index: 1;
-    padding-top: 7%;
+    padding-top: 6%;
   }
   .topbar-for-mobile {
     width: 100%;
@@ -46,8 +46,13 @@
   .posts .all-posts .particular-post {
     width: 95%;
   }
+  .posts .all-posts .particular-post .heading img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
   .posts .all-posts .particular-post .heading h6 {
     font-size: 0.8rem;
+    margin-top: 4%;
   }
   .posts .all-posts .particular-post .heading p {
     font-size: 0.6rem;
